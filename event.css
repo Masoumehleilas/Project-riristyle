@@ -27,7 +27,7 @@ body {
 
 .all {
   display: flex;
-  background-color: #313547;
+  background-color: #cf71b4;
   flex: 1;
   min-height: 680px;
 }
@@ -71,14 +71,14 @@ form {
 
 label {
   font-size: 14px;
-  color: #d1d1d1;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
 .input_a input {
   width: 100%;
   padding: 12px;
-  border: 1px solid #4a4d55;
+  border: 1px solid #f5f5f5;
   background-color: transparent;
   color: white;
   font-size: 14px;
@@ -86,7 +86,7 @@ label {
 }
 
 input::placeholder {
-  color: #aaa;
+  color: #d0cccc;
 }
 
 /* چک باکس */
@@ -125,7 +125,7 @@ button {
   width: 330px;
   flex-shrink: 0;
   min-height: 680px;
-  background-color: #454a61;
+  background-color: #b3699e;
   color: white;
   padding: 60px 35px;
 }
