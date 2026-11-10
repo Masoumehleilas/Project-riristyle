@@ -10,31 +10,26 @@ body {
   min-height: 100vh;
 }
 
-/* قسمت اصلی پروژه */
-
 .project {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
-  min-height: 100vh;
-  padding: 30px;
   max-width: 1200px;
+  min-height: 680px;
+  padding: 30px;
   margin: auto;
 }
 
-/* قسمت فرم */
-
 .all {
-  display: flex;
-  background-color: #cf71b4;
   flex: 1;
-  min-height: 680px;
+  min-width: 0;
+  background-color: #da6cbb;
 }
 
 .l {
   width: 100%;
-  padding: 60px 45px;
+  padding: 140px 55px 60px;
 }
 
 .date {
@@ -48,8 +43,6 @@ h1 {
   margin-bottom: 35px;
   font-size: 32px;
 }
-
-/* فرم */
 
 form {
   display: flex;
@@ -71,7 +64,7 @@ form {
 
 label {
   font-size: 14px;
-  color: #ffffff;
+  color: white;
   margin-bottom: 12px;
 }
 
@@ -89,8 +82,6 @@ input::placeholder {
   color: #d0cccc;
 }
 
-/* چک باکس */
-
 .check {
   display: flex;
   align-items: center;
@@ -106,8 +97,6 @@ input::placeholder {
   margin: 0;
 }
 
-/* دکمه */
-
 button {
   background-color: white;
   color: black;
@@ -117,106 +106,4 @@ button {
   border: none;
   cursor: pointer;
   margin-top: 30px;
-}
-
-/* قسمت مهمان ها */
-
-.ra {
-  width: 330px;
-  flex-shrink: 0;
-  min-height: 680px;
-  background-color: #b3699e;
-  color: white;
-  padding: 60px 35px;
-}
-
-.ra h4 {
-  font-weight: 200;
-  font-size: 15px;
-  color: whitesmoke;
-  margin-bottom: 30px;
-}
-
-.ra h3 {
-  font-weight: 200;
-  padding-top: 30px;
-  margin-bottom: 25px;
-}
-
-/* عکس مهمان ها */
-
-.imgs {
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.ra img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin-right: 15px;
-  object-fit: cover;
-}
-
-strong {
-  font-size: 16px;
-}
-
-/* ریسپانسیو برای تبلت */
-
-@media screen and (max-width: 900px) {
-  .project {
-    padding: 20px;
-  }
-
-  .l {
-    padding: 45px 25px;
-  }
-
-  .ra {
-    width: 280px;
-    padding: 45px 25px;
-  }
-
-  .inputt {
-    gap: 12px;
-  }
-}
-
-/* ریسپانسیو برای موبایل */
-
-@media screen and (max-width: 650px) {
-  .project {
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  .all {
-    width: 100%;
-    min-height: auto;
-  }
-
-  .l {
-    padding: 35px 20px;
-  }
-
-  .ra {
-    width: 100%;
-    min-height: auto;
-    padding: 35px 25px;
-  }
-
-  .inputt {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .input_a input {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
 }
